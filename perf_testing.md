@@ -135,8 +135,8 @@ The key components of HPE LoadRunner are:
 		  -  for how long 
    - During runs the Controller receives real-time **monitoring data** and displays status.
    
-- Agent process manages connection between Controller and Load Generator instances.
-- Analysis assembles logs from various load generators and formats reports for visualization of run result data and monitoring data
+- **Agent** process manages connection between Controller and Load Generator instances.
+- **Analysis** assembles logs from various load generators and formats reports for visualization of run result data and monitoring data
 
 ![hpelr arch](https://www.perftesting.co.uk/wp-content/uploads/2011/08/Screen-Shot-2011-08-24-at-09.29.18.png)
 
@@ -164,6 +164,33 @@ The following recommended settings for those using **HP Enterprise LoadRunner** 
 
 
 -----
+**Question**
+
+What can I expect to receive from Salesforce during and after my approved performance testing?
+
+Salesforce role is purely a **monitoring role** to ensure that testing causes no issues with our services.
+
+Salesforce Support does not provide or interpret results from any user testing. You are welcome to collect your own performance metrics. Should you need assistance with how best to do this, we encourage you to work with consultants who have expertise in this area.
+
+---
+**Question**
+
+Can I get server logs for my performance testing?
+
+Salesforce **does not provide overall metrics or server logs** for the performance testing period.
+
+However, if you have a very specific request for information such as:
+
+- The running / CPU time for a particular process at a given time for a particular user.
+- If an error is being received during the test and you need additional details to determine the nature of the error.
+
+Under these circumstances, Salesforce can sometimes extract and provide a limited set of server log data to answer those specific questions. Additionally, **Signature Success customers** may be eligible to obtain more broad detailed results.
+
+To request this information, open a **new support case** that references your original case for the approved performance testing. Our team can review the request and assist you where we can.
+
+
+
+---
 
 #### Test Plan	
 
