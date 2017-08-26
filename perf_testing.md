@@ -109,9 +109,45 @@ Not necessarily. Salesforce doesn't:
 
 -----
 
+**Question**
+
+What is  **HP Enterprise LoadRunner**?
+
+![hpelr](https://upload.wikimedia.org/wikipedia/en/6/61/HPE_LoadRunner_logo.png height=100)
+
+HP Enterprise LoadRunner is a software testing tool from Hewlett Packard Enterprise. It is used to test applications, measuring system behaviour and performance under load.
+
+LoadRunner **simulates user activity** by generating messages between application components or by simulating interactions with the user interface such as keypresses or mouse movements.
+
+
+The messages and interactions to be generated are stored in scripts. LoadRunner can generate the scripts by recording them, such as logging HTTP requests between a client web browser and an application's web server
+
+The key components of HPE LoadRunner are:
+
+- **VuGen** (Virtual User Generator) for generating and editing scripts
+- **Load Generator** generates the load against the application by following scripts
+
+- **Controller**
+	-  controls
+	-   launches 
+	-   sequences instances of Load Generator 
+		  - specifying which script to use
+		  -  for how long 
+   - During runs the Controller receives real-time **monitoring data** and displays status.
+   
+- Agent process manages connection between Controller and Load Generator instances.
+- Analysis assembles logs from various load generators and formats reports for visualization of run result data and monitoring data
+
+![hpelr arch](https://www.perftesting.co.uk/wp-content/uploads/2011/08/Screen-Shot-2011-08-24-at-09.29.18.png)
+
+[Ref](https://en.wikipedia.org/wiki/HP_LoadRunner)
+
+---- 
+
 **Question:**
 
 Do you have recommended settings for **HP Enterprise LoadRunner**?
+
 
 The following recommended settings for those using **HP Enterprise LoadRunner** during the performance testing:
 
@@ -123,7 +159,9 @@ The following recommended settings for those using **HP Enterprise LoadRunner** 
 - Parameterize the username and password
 - Place a **web_reg_find**  before the home page link
 - When the save action is executed, an HTTP submit is executed which then does a redirect to the just created object. It is necessary to use **web_reg_save_param** to capture the just created entity id and replace the static id in the script
--  Please note any questions related to HPE LoadRunner beyond the above information should be directed to HPE: [SASS HPE](https://saas.hpe.com/en-us/contact)
+-  Please note any questions related to HPE LoadRunner beyond the above information should be directed to HP Enterprise: [SASS HPE](https://saas.hpe.com/en-us/contact)
+
+
 
 -----
 
