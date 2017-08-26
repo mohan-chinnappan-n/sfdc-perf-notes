@@ -1,4 +1,4 @@
-### SFDC Performance Testing
+### SFDC Performance Notes 
 
 1. [Performance Testing using HP Enterprise LoadRunner ](perf_testing.md)
 2. [View State](viewstate.md)
