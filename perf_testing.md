@@ -82,6 +82,51 @@ The test plan should include:
 
 Once salesforce.com Customer Support approves your test plan, salesforce.com can help monitor your tests. The performance test request should be submitted at least 2 weeks in advance.
 
+------
+**Question:**
+
+
+Why can’t I just test on my own without prior approval?
+
+Pre-approval of your testing regimen allows us to:
+
+- Ensure we have the necessary scheduling of our Site Reliability and Customer Centric Engineering team resources
+- Make them aware of any ongoing testing and communication details in case we need to throttle or block the testing. Unapproved testing is subject to throttling and blocking.
+- Preview the scripts and deny those that would degrade the performance on the instance.
+
+----
+
+**Question:**
+
+My performance test was approved. Does that mean that Salesforce considers my scripts to be well-designed and valid?
+
+Not necessarily. Salesforce doesn't:
+- Validate the testing methodology
+- Debug the testing scripts for errors
+- Confirm that the scripts will accurately test and reflect real-world scenarios of expected performance behavior in production.
+
+- Salesforce doesn't debug the testing scripts for errors.
+
+-----
+
+**Question:**
+
+Do you have recommended settings for **HPE LoadRunner**?
+
+The following recommended settings for those using **HPE LoadRunner** during the performance testing:
+
+- Scripts must never have hard coded location to external files
+- URLs must be parameterized
+- Since Salesforce.com uses IP Range restrictions as one of the security mechanism, ensure that on the profile for the used for users in testing, **Single Sign-On is disabled**, and there are no IP Range Restrictions
+- **Think Time** should be placed between each transaction and set to 5 second
+-- Set jse = 0
+- Parameterize the username and password
+- Place a ```web_reg_find`` before the home page link
+- When the save action is executed, an HTTP submit is executed which then does a redirect to the just created object. It is necessary to use ```web_reg_save_param`` to capture the just created entity id and replace the static id in the script
+-  Please note any questions related to HPE LoadRunner beyond the above information should be directed to HPE: [SASS HPE](https://saas.hpe.com/en-us/contact)
+
+-----
+
 #### Test Plan
 
 Identify your key business processes and build test scripts around them.
@@ -127,18 +172,12 @@ Monitor each round of testing as the load increases and compare your results wit
 Proper unit testing, accurate test scripts, and realistic estimated loads can help you avoid this scenario, and salesforce.com Customer Support can provide metrics from the salesforce.com logs to help you with your post-test analysis.
 
 
-
-
-
-
-
-
-
-
-
-
-
 ------
+
+### Common questions
+[Ref](https://help.salesforce.com/articleView?id=000230841&language=en_US&type=1)
+
+
 
 
 
