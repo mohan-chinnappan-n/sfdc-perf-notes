@@ -38,6 +38,9 @@ Performance testing measures performance **under a particular workload, and incl
 
 The Force.com platform serves  billions of transactions daily with an average response time of under 300 milliseconds, and salesforce.com tests and monitors the platform to ensure that it has excess capacity.
 
+[Here is current transaction graph](https://status.salesforce.com/performance)
+
+
 Also guards against highly inefficient code by using governor limits, which help ensure both that your users have a consistent application experience and that resources are available to all salesforce.com customers.
 
 Our goal should be to use **load testing** instead of stress testing.
