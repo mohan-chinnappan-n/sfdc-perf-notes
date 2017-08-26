@@ -111,9 +111,9 @@ Not necessarily. Salesforce doesn't:
 
 **Question:**
 
-Do you have recommended settings for **HPE LoadRunner**?
+Do you have recommended settings for **HP Enterprise LoadRunner**?
 
-The following recommended settings for those using **HPE LoadRunner** during the performance testing:
+The following recommended settings for those using **HP Enterprise LoadRunner** during the performance testing:
 
 - Scripts must never have hard coded location to external files
 - URLs must be parameterized
@@ -121,13 +121,13 @@ The following recommended settings for those using **HPE LoadRunner** during the
 - **Think Time** should be placed between each transaction and set to 5 second
 -- Set jse = 0
 - Parameterize the username and password
-- Place a ```web_reg_find`` before the home page link
-- When the save action is executed, an HTTP submit is executed which then does a redirect to the just created object. It is necessary to use ```web_reg_save_param`` to capture the just created entity id and replace the static id in the script
+- Place a **web_reg_find**  before the home page link
+- When the save action is executed, an HTTP submit is executed which then does a redirect to the just created object. It is necessary to use **web_reg_save_param** to capture the just created entity id and replace the static id in the script
 -  Please note any questions related to HPE LoadRunner beyond the above information should be directed to HPE: [SASS HPE](https://saas.hpe.com/en-us/contact)
 
 -----
 
-#### Test Plan
+#### Test Plan	
 
 Identify your key business processes and build test scripts around them.
 
