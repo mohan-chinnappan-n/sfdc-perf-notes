@@ -60,7 +60,7 @@ The goals of performance testing on the Force.com platform are to:
 - Determine whether your estimated transaction throughput of anticipated loads is accurate
 
 
-**Don’t** benchmark performance in a **sandbox organization** anticipating the same performance in your production organization. Due to variables such as data distribution and user load patterns, which can be fluctuate because of database caching and the queue performance associated with asynchronous processing (@future calls), requests might perform faster or slower in production.
+**Don’t benchmark performance** in a **sandbox organization** anticipating the same performance in your production organization. Due to variables such as data distribution and user load patterns, which can be fluctuating because of database caching and the queue performance associated with asynchronous processing (@future calls), requests might perform faster or slower in production.
 
 Sandbox use:
 
