@@ -144,6 +144,9 @@ The key components of HPE LoadRunner are:
 
 ---- 
 
+
+[Ref](https://help.salesforce.com/articleView?id=000230841&language=en_US&type=1)
+
 **Question:**
 
 Do you have recommended settings for **HP Enterprise LoadRunner**?
@@ -239,8 +242,7 @@ Proper unit testing, accurate test scripts, and realistic estimated loads can he
 
 ------
 
-### Common questions
-[Ref](https://help.salesforce.com/articleView?id=000230841&language=en_US&type=1)
+ 
 
 
 
