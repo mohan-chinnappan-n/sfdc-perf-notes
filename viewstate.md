@@ -33,7 +33,9 @@ How to inspect View State:
 
 [Ref](https://help.salesforce.com/articleView?id=code_dev_console_tab_view_state.htm&type=0)
 
-Personal Settings > Advanced User Details:
+My Settings > Personal > Advanced User Details:
+
+![setting view state view mode](./img/setting-viewstate-view.png)
 
 ![view state enable](./img/view-state-enable.png)
 
