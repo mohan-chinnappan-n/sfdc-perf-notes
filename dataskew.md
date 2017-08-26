@@ -33,6 +33,9 @@ When a large number of records with the **same object type are owned by a single
 
 Ownership skew causes **performance problems**, which can surface when you’re managing your **role hierarchy and sharing rules**.
 
+-----
+
+
 ### Lookup Skew
 
 Lookup skew happens **when a very large number of records are associated to a single record in the lookup object**.  Because you can place lookup fields on any object in Salesforce, lookup skew can create problems for any object within your organization.
