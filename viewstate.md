@@ -1,4 +1,4 @@
-### Visualforce View State
+### Visualforce View State Optimization
 
 [Ref](https://developer.salesforce.com/page/An_Introduction_to_Visualforce_View_State)
 
