@@ -31,6 +31,8 @@ In Visualforce, page state is persisted as a **hidden form field** that is autom
 
 How to inspect View State:
 
+Enable View State Inspector:
+
 [Ref](https://help.salesforce.com/articleView?id=code_dev_console_tab_view_state.htm&type=0)
 
 My Settings > Personal > Advanced User Details:
@@ -41,6 +43,33 @@ My Settings > Personal > Advanced User Details:
 
 Since the view state is linked to form data, the View State tab only appears if your page contains an <apex:form> tag. In addition, the View State tab displays only on pages using custom controllers or controller extensions.
 
-![view state](https://help.salesforce.com/resource/HTHelpDocImages_208_19_en_US_25/code_dev_console_viewstate_tab.png)
+ 
+---
+
+What is in View State:
+ 
+The data in the view state should be sufficient to **recreate the state** of the page when the HTML POST is received.
+
+To do this, it stores the following data:
+
+- All **non-transient** data members in the associated controller (either standard or custom) and the controller extensions.
+
+- Objects that are reachable from a non-transient data member in a controller or controller extension.
+
+- The **component tree** for that page, which represents the page's component structure and the associated state, which are the values applied to those components.
+
+- A small amount of data for Visualforce to do housekeeping.
+
+
+View state data is **encrypted** and cannot be viewed with tools like Firebug. 
+
+Example:
+
+![view-state-cust-ctrl-2](./img/view-state-cust-ctrl-1.png)
+![view-state-cust-ctrl-2](./img/view-state-cust-ctrl-2.png)
+![view-state-cust-ctrl-2](./img/view-state-cust-ctrl-3.png)
+
+---
+
 
  
