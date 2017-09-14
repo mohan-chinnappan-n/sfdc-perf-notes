@@ -113,7 +113,7 @@ Not necessarily. Salesforce doesn't:
 
 What is  **HP Enterprise LoadRunner**?
 
-[hpelr](https://upload.wikimedia.org/wikipedia/en/6/61/HPE_LoadRunner_logo.png height=100)
+![hpelr](https://upload.wikimedia.org/wikipedia/en/6/61/HPE_LoadRunner_logo.png)
 
 HP Enterprise LoadRunner is a software testing tool from Hewlett Packard Enterprise. It is used to test applications, measuring system behaviour and performance under load.
 
